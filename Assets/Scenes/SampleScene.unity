@@ -1717,6 +1717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894628363}
+  - component: {fileID: 1894628364}
   m_Layer: 0
   m_Name: StoryManager
   m_TagString: Untagged
@@ -1733,12 +1734,30 @@ Transform:
   m_GameObject: {fileID: 1894628362}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 719.6701, y: 244.77649, z: -4.0292473}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894628364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894628362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8035f96038d274418eb5b6e8370d503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyDatas:
+  - {fileID: 11400000, guid: ccc8e05e4302e8846a1311e0387f81c6, type: 2}
+  background: {fileID: 1981922866}
+  characterImage: {fileID: 751345040}
+  storyText: {fileID: 817471928}
+  characterName: {fileID: 1712863062}
 --- !u!1 &1981922864
 GameObject:
   m_ObjectHideFlags: 0
