@@ -11,13 +11,20 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private TextMeshProUGUI storyText;
     [SerializeField] private TextMeshProUGUI characterName;
+    [SerializeField] public GameObject canvasSelectGame;
+    [SerializeField] public GameObject canvasCanvas;
     //ストーリーのエレメント配列番号が必要なのでプロパティを
     public int storyIndex { get; private set; }
     public int textIndex { get; private set; }
 
     //テキストがすべて表示されたかどうか
     private bool finishText = true;
-        
+
+    //BGMを流す
+    [SerializeField] private SoundManager soundManager;
+    
+
+
     private void Start()
     {
         //テキスト部を初期化して
@@ -41,6 +48,11 @@ public class StoryManager : MonoBehaviour
     //呼び出し方は
     private void SetStoryElement(int _storyIndex, int _textIndex)
     {
+        //ストーリーデータの中のBGMを呼んで流す
+        soundManager.PlayBGM(storyDatas[_storyIndex].bgm);
+
+
+
         //同じ言葉をまとめておくためのvar
         var storyElement = storyDatas[_storyIndex].stories[_textIndex];
         //どのストーリーデータの、どのバックグランドか
@@ -68,8 +80,19 @@ public class StoryManager : MonoBehaviour
         }
         else
         {
+            //Debug.Log("チェンジ前インデックス" + textIndex);
+            //Debug.Log("チェンジ直前" + _storyIndex);
             //シーンチェンジや選択肢の表示。スクリプタブルオブジェクトを呼んだり。
-            ChangeStoryElement(_storyIndex);
+            if(_storyIndex == 1)
+            {
+                //ストーリー１が終わったということはセレクトゲームがはじまる
+                canvasSelectGame.SetActive(true);
+                canvasCanvas.SetActive(false);
+            }
+            else
+            {
+                ChangeStoryElement(_storyIndex);
+            }
         }
     }
 
@@ -77,7 +100,8 @@ public class StoryManager : MonoBehaviour
     {
         textIndex = 0;
         storyIndex++;//次のシーンへ
-        SetStoryElement(_storyIndex, textIndex);
+        //Debug.Log("ChangeStoryElement内インデックス" + textIndex+"と、ストーリーインデックスは" + storyIndex);
+        SetStoryElement(storyIndex, textIndex);
     }
 
     //文字を1文字づつ表示するコルーチン

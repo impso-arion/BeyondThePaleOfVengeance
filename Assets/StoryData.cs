@@ -6,6 +6,8 @@ using UnityEngine;
 public class StoryData : ScriptableObject
 {
     public List<Story> stories = new List<Story>();
+    //‚Ç‚Ì‰¹Šy‚ð—¬‚·‚©
+    public SoundManager.BGM bgm;
 }
 [System.Serializable]
 public class Story

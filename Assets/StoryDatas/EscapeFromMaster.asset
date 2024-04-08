@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2000043f0d12192408e1b34419fd4745, type: 3}
+  m_Name: EscapeFromMaster
+  m_EditorClassIdentifier: 
+  stories:
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u307B\u3093\u3068\u3046\u306B\u307E\u3042\u3001\u3069\u3046\u306A\u308B\u3053\u3068\u304B\u3068\u601D\u3063\u3066\u5FC3\u914D\u3057\u305F\u308F\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u304A\u5F13\u30FB\u30FB\u30FB"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3053\u306E\u5973\u304C\u3001\u5E02\u4E5D\u90CE\u306E\u6BBA\u3057\u305F\u4E3B\u4EBA\u306E\u611B\u59BE\u3001\u304A\u5F13\u3067\u3042\u308B\u3002\n\u304A\u5F13\u306F\u304A\u3073\u3048\u305F\u58F0\u3067\u3001\u8A71\u3092\u3064\u3065\u3051\u305F"
+    CharacterName: "\uFF0A\uFF0A\uFF0A"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u304A\u524D\u304C\u307E\u3063\u4E8C\u3064\u306B\u3084\u3089\u308C\u305F\u5F8C\u306F\u3001\u79C1\u306E\u756A\u3058\u3083\u3042\u308B\u307E\u3044\u304B\u3068\u3001\n\u3055\u3063\u304D\u304B\u3089\u3001\u5C4F\u98A8\u306E\u5F8C\u3067\u606F\u3092\u51DD\u3089\u3057\u3066\u898B\u3066\u3044\u305F\u306E\u3055\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3042\u3001\u3042\u3042\u3001\u305D\u3046\u304B\u3001\u305D\u3046\u3060\u306A\u30FB\u30FB\u30FB"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u304C\u3001\u307B\u3093\u3068\u3046\u306B\u3044\u3044\u3042\u3093\u3070\u3044\u3060\u3063\u305F\u306D\u3002\n\u3053\u3046\u306A\u3063\u3061\u3083\u3001\u4E00\u523B\u3068\u304D\u3082\u7336\u4E88\u306F\u3057\u3066\u3044\u3089\u308C\u306A\u3044\u304B\u3089\u3001\u6709\u308A\u91D1\u3092\u3055\u3089\u3063\u3066\u9003\u3052\u308B\u3068\u3057\u3088\u3046\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3057\u3063\u304B\u308A\u304A\u3057\uFF01\u3042\u3093\u305F\u304C\u3057\u304F\u3058\u308B\u3068\u79C1\u3082\u6BBA\u3055\u308C\u308B\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: a76849c21b11b9241980b0cb21204fa7, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u307E\u3060\u4EF2\u9593\u305F\u3061\u306F\u6C17\u304C\u3064\u3044\u3066\u3044\u306A\u3044\u3088\u3046\u3060\u304B\u3089\u3001\u9003\u3052\u308B\u306A\u3089\u4ECA\u306E\u3046\u3061\u3055\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: dfb66f876ccbc024c8cc14e2ed9e8913, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u4E73\u6BCD\u3084\u5973\u4E2D\u306A\u3069\u306F\u3001\u53F0\u6240\u306E\u65B9\u3067\u304C\u305F\u304C\u305F\u9707\u3048\u3066\u3044\u308B\u3089\u3057\u3044\u304B\u3089\u3001\n\u79C1\u304C\u884C\u3063\u3066\u3001\u3058\u305F\u3070\u305F\u9A12\u304C\u306A\u3044\u3088\u3046\u306B\u3044\u3063\u3066\u3053\u3088\u3046\u3088\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: dfb66f876ccbc024c8cc14e2ed9e8913, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3050\u305A\u3050\u305A\u3057\u3066\u308B\u30D2\u30DE\u306F\u306A\u3044\u308F\u3001\u3044\u307E\u306B\u9A12\u304E\u306B\u6C17\u3065\u3044\u3066\u3053\u3053\u3082\u56F2\u307E\u308C\u308B\u3002\n\u3053\u306E\u307E\u307E\u9003\u3052\u3066\u3082\u91D1\u3055\u3048\u3042\u308C\u3070\u306A\u3093\u3068\u304B\u306A\u308B\u3055\u3002"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: dfb66f876ccbc024c8cc14e2ed9e8913, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3055\u3042\uFF01\u3000\u3060\u304B\u3089\u304A\u524D\u306F\u6709\u308A\u91D1\u3092\u63A2\u3057\u3066\u4E0B\u3055\u3044\u3088"
+    CharacterName: "\u304A\u5F13"
+  - Background: {fileID: 21300000, guid: ea440af3a813d18429c2449e67afc81a, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u5F37\u3044\u53E3\u8ABF\u3060\u304C\u3001\u78BA\u304B\u306B\u58F0\u306F\u9707\u3048\u3066\u3044\u305F\u3002\n\u304C\u3001\u305D\u3046\u3057\u305F\u9707\u3048\u3092\u3001\u5973\u6027\u3068\u3057\u3066\u306E\u5F37\u3044\u610F\u5730\u3067\u6291\u5236\u3057\u3066\u3001\u52AA\u3081\u3066\u5E73\u6C17\u3092\u88C5\u3063\u3066\u3044\u308B\u3089\u3057\u304B\u3063\u305F\u3002"
+    CharacterName: "\uFF0A\uFF0A\uFF0A"
+  - Background: {fileID: 21300000, guid: ea440af3a813d18429c2449e67afc81a, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\uFF08\u305D\u3046\u304B\u3001\u304A\u5F13\u3001\u305D\u3046\u3060\u306A\u3001\u4FFA\u306F\u4F55\u306E\u305F\u3081\u306B\u65AC\u308A\u3042\u3063\u305F\u3093\u3060\u3063\u3066\uFF09"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  - Background: {fileID: 21300000, guid: ea440af3a813d18429c2449e67afc81a, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\uFF08\u304A\u5F13\u3001\u304A\u524D\u306E\u305F\u3081\u306B\u65AC\u308A\u3042\u3063\u305F\u3093\u3058\u3083\u306D\u3048\u304B\uFF09"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  - Background: {fileID: 21300000, guid: 1439a287284043b44aa01c03dd45a2cd, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\uFF08\u304A\u5F13\u306E\u8A00\u3046\u901A\u308A\u3060\u305C\u3001\u304A\u5F13\u3001\u4FFA\u306F\u304A\u524D\u3068\u9003\u3052\u308B\u305C\uFF09"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  - Background: {fileID: 21300000, guid: 1439a287284043b44aa01c03dd45a2cd, type: 3}
+    CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
+    StoryText: "\u3055\u3066\u3001\u91D1\u76EE\u306E\u3082\u306E\u3092\u63A2\u3055\u306A\u3044\u3068\u306A\u3001\u3050\u305A\u3050\u305A\u3057\u3066\u3089\u308C\u306A\u3044\u3002\n\u3069\u3053\u3092\u63A2\u305D\u3046\u304B\u30FB\u30FB\u30FB"
+    CharacterName: "\u5E02\u4E5D\u90CE"
+  bgm: 1
