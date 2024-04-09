@@ -15,7 +15,7 @@ MonoBehaviour:
   stories:
   - Background: {fileID: 21300000, guid: fffb1c67f007d1a4d8f10f29ee3b05ee, type: 3}
     CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
-    StoryText: "\u306A\u3093\u3060\u30FB\u30FB\u30FB\u8D64\u3061\u3083\u3093\u304C\u3044\u308B"
+    StoryText: "\u306A\u3093\u3060\u30FB\u30FB\u30FB\u8D64\u5B50\u304C\u3044\u308B"
     CharacterName: "\u5E02\u4E5D\u90CE"
   - Background: {fileID: 21300000, guid: fffb1c67f007d1a4d8f10f29ee3b05ee, type: 3}
     CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
@@ -37,12 +37,12 @@ MonoBehaviour:
     CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
     StoryText: "\u5E02\u4E5D\u90CE\u306F\u9003\u308C\u3088\u3046\u3068\u3059\u308B\u304C\u3001\u4E3B\u541B\u306E\u907A\u4F53\u3092\u898B\u3066\u6FC0\u9AD8\u3057\u305F\u4F8D\u305F\u3061\u306F\u3001\n\u5E02\u4E5D\u90CE\u3068\u304A\u5F13\u3092\u9003\u3059\u306F\u305A\u3082\u306A\u3044\u3002"
     CharacterName: "\u203B\u203B\u203B"
-  - Background: {fileID: 21300000, guid: db28d08bc0fce934ca4d9316be7ddc60, type: 3}
+  - Background: {fileID: 21300000, guid: 7da5366070dffa1468e0fe06be1b22c1, type: 3}
     CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
     StoryText: "\u3042\u308F\u308C\u4E8C\u4EBA\u3082\u4E3B\u541B\u306E\u5F8C\u3092\u8FFD\u3044\u3001\u5200\u306E\u3048\u3058\u304D\u3068\u306A\u308A\u307E\u3057\u305F\u3002\n\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u30FB\u30FB\u30FB\u30FB"
     CharacterName: "\u203B\u203B\u203B"
-  - Background: {fileID: 21300000, guid: db28d08bc0fce934ca4d9316be7ddc60, type: 3}
+  - Background: {fileID: 21300000, guid: 7da5366070dffa1468e0fe06be1b22c1, type: 3}
     CharacterImage: {fileID: 21300000, guid: f2f9875bc7bc72a4299810023ade2240, type: 3}
-    StoryText: "\u3042\u308F\u308C\u4E8C\u4EBA\u3082\u4E3B\u541B\u306E\u5F8C\u3092\u8FFD\u3044\u3001\u5200\u306E\u3048\u3058\u304D\u3068\u306A\u308A\u307E\u3057\u305F\u3002"
+    StoryText: 
     CharacterName: "\u203B\u203B\u203B"
   bgm: 0

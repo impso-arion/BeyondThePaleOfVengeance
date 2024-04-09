@@ -13,6 +13,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI characterName;
     [SerializeField] public GameObject canvasSelectGame;
     [SerializeField] public GameObject canvasCanvas;
+    SceneController sceneController;
     //ストーリーのエレメント配列番号が必要なのでプロパティを
     public int storyIndex { get; private set; }
     public int textIndex { get; private set; }
@@ -27,10 +28,13 @@ public class StoryManager : MonoBehaviour
 
     private void Start()
     {
+        sceneController = FindObjectOfType<SceneController>();
+
         //テキスト部を初期化して
         storyText.text = "";
         characterName.text = "";
         SetStoryElement(storyIndex, textIndex);
+
     }
 
     private void Update()
@@ -71,9 +75,11 @@ public class StoryManager : MonoBehaviour
 
     private void ProgressionStory(int _storyIndex)
     {
+        Debug.Log("_storyIndex" + storyIndex);
+        Debug.Log("textIndex" + storyIndex);
         //ストーリーインデックスよりも大きいテキストは存在しないのでチェックして対応
         //最後まで行ったなら、次のお話などに進めたいですよね
-        if(textIndex < storyDatas[_storyIndex].stories.Count)
+        if (textIndex < storyDatas[_storyIndex].stories.Count)
         {
             //まだ大きくないなら次のインデックスを表示
             SetStoryElement(_storyIndex, textIndex);
@@ -88,6 +94,14 @@ public class StoryManager : MonoBehaviour
                 //ストーリー１が終わったということはセレクトゲームがはじまる
                 canvasSelectGame.SetActive(true);
                 canvasCanvas.SetActive(false);
+            }
+            else if (_storyIndex == 2)
+            {
+                //ストーリー2はゲームオーバー。タイトルへ戻る
+                //ストーリー３はエンディング。タイトルへ戻る
+                Debug.Log("_storyIndex" + storyIndex);
+                Debug.Log("textIndex" + storyIndex);
+                sceneController.GoToTitle();
             }
             else
             {
