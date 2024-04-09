@@ -46,11 +46,11 @@ public class StoryManager : MonoBehaviour
     }
 
     //呼び出し方は
-    private void SetStoryElement(int _storyIndex, int _textIndex)
+    public void SetStoryElement(int _storyIndex, int _textIndex)
     {
         //ストーリーデータの中のBGMを呼んで流す
         soundManager.PlayBGM(storyDatas[_storyIndex].bgm);
-
+        storyText.text = "";
 
 
         //同じ言葉をまとめておくためのvar
@@ -117,6 +117,10 @@ public class StoryManager : MonoBehaviour
         //すべて表示されたら次の文に行けます
         finishText = true;
     }
-
+    //外部からストーリーインデックスを変更する
+    public void SetStoryIndex(int newIndex)
+    {
+        storyIndex = newIndex;
+    }
 
 }
