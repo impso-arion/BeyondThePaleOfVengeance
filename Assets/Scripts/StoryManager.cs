@@ -75,8 +75,8 @@ public class StoryManager : MonoBehaviour
 
     private void ProgressionStory(int _storyIndex)
     {
-        Debug.Log("_storyIndex" + storyIndex);
-        Debug.Log("textIndex" + storyIndex);
+        Debug.Log("_storyIndex" + _storyIndex);
+        Debug.Log("textIndex" + textIndex);
         //ストーリーインデックスよりも大きいテキストは存在しないのでチェックして対応
         //最後まで行ったなら、次のお話などに進めたいですよね
         if (textIndex < storyDatas[_storyIndex].stories.Count)
@@ -95,12 +95,12 @@ public class StoryManager : MonoBehaviour
                 canvasSelectGame.SetActive(true);
                 canvasCanvas.SetActive(false);
             }
-            else if (_storyIndex == 2)
+            else if (_storyIndex == 2 || _storyIndex == 3)
             {
                 //ストーリー2はゲームオーバー。タイトルへ戻る
                 //ストーリー３はエンディング。タイトルへ戻る
-                Debug.Log("_storyIndex" + storyIndex);
-                Debug.Log("textIndex" + storyIndex);
+                Debug.Log("_storyIndex" + _storyIndex);
+                Debug.Log("textIndex" + textIndex);
                 sceneController.GoToTitle();
             }
             else
@@ -135,6 +135,7 @@ public class StoryManager : MonoBehaviour
     public void SetStoryIndex(int newIndex)
     {
         storyIndex = newIndex;
+        textIndex = 0;
     }
 
 }
