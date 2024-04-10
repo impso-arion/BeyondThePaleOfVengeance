@@ -20,7 +20,7 @@ public class GameOverDialog : MonoBehaviour
 
     public void ShowDialog()
     {
-        dialogText.text = "赤ん坊が寝ているが・・・\nとなりの部屋に移動しようか・・・";
+        dialogText.text = "なにかの気配・・・\nとなりの部屋に移動しようか・・・";
         dialogBox.SetActive(true);
     }
 

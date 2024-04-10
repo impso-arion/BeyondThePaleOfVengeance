@@ -33,63 +33,63 @@ public class ImageClick : MonoBehaviour, IPointerClickHandler
                 // タグが "Player" の場合の処理
                 Debug.Log("押し入れ２です");
                 // ここにプレイヤーに関連する処理を記述します
-                sendStoryText = "押し入れ2だな";
+                sendStoryText = "押し入れだな、布団がしまってある。";
                 textIndicate(sendStoryText);
                 break;
             case "osiire":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("押し入れです");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "押し入れだな";
+                sendStoryText = "押し入れだな、ごちゃごちゃしたものがしまってある。";
                 textIndicate(sendStoryText);
                 break;
             case "nanbanDana":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("南蛮棚です");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "南蛮棚だな";
+                sendStoryText = "南蛮棚だな、こういうところに大切なものを隠しそうだが・・・・・・\n見当たらない";
                 textIndicate(sendStoryText);
                 break;
             case "bin":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("陶器の小ビンです");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "陶器の小瓶だな";
+                sendStoryText = "陶器の小瓶だな、ガラクタじゃねえか。";
                 textIndicate(sendStoryText);
                 break;
             case "rousoku":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("ろうそくですね");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "ろうそくだ";
+                sendStoryText = "ろうそくだ、明るい。このへんには何も無いか。";
                 textIndicate(sendStoryText);
                 break;
             case "sitai":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("主人の死体だ");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "主人の死体だ";
+                sendStoryText = "主人の死体だ、まだ少し動いてる・・・";
                 textIndicate(sendStoryText);
                 break;
             case "sitai1":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("主人の死体だな、別の部分");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "主人の死体の別の部分だ";
+                sendStoryText = "主人の死体だ・・・俺を恨んでるだろうなあ・・・";
                 textIndicate(sendStoryText);
                 break;
             case "tukue":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("つくえです");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "つくえだな";
+                sendStoryText = "つくえだ。書類があるが、\nなんとも金になりそうかどうかはわからねえ。";
                 textIndicate(sendStoryText);
                 break;
             case "kobinn":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("小瓶がならんでいる");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "小瓶だ";
+                sendStoryText = "小瓶だ。この中に金が・・・なんてな。なにもない。";
                 textIndicate(sendStoryText);
                 break;
             case "akari":
@@ -110,14 +110,14 @@ public class ImageClick : MonoBehaviour, IPointerClickHandler
                 // タグが "Enemy" の場合の処理
                 Debug.Log("ふすまだ");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "ふすまだ";
+                sendStoryText = "ふすまの向こうには何もない";
                 textIndicate2(sendStoryText);
                 break;
             case "tinoato":
                 // タグが "Enemy" の場合の処理
                 Debug.Log("血のあとだ");
                 // ここにエネミーに関連する処理を記述します
-                sendStoryText = "血のがここまで飛んでいる";
+                sendStoryText = "血のがここまで飛んでいる。\nそういえば俺も返り血まみれだ。";
                 textIndicate2(sendStoryText);
                 break;
             default:
@@ -152,7 +152,7 @@ public class ImageClick : MonoBehaviour, IPointerClickHandler
         objCharacterName.SetActive(true);
         objTextWindow.SetActive(true);
         koban.SetActive(true) ;
-        storyText.text = "小判を手に入れた。これだけでは足しになるまいが";
+        storyText.text = "小判を手に入れた。これだけでは足しになるまいが、五両近くありそうだ。";
         characterName.text = "市九郎";
         selectGame2.getMoney = true;//trueにすると、エンディングへ。
         selectGame2.onGame2 = false;

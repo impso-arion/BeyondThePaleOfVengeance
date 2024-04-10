@@ -47,6 +47,30 @@ public class StoryManager : MonoBehaviour
             characterName.text = "";
             ProgressionStory(storyIndex);
         }
+        if (Input.GetKeyDown(KeyCode.Space) && finishText)
+        {
+            textIndex++;//インデックスを増やす
+            //テキスト部を初期化して
+            storyText.text = "";
+            characterName.text = "";
+            ProgressionStory(storyIndex);
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) && finishText)
+        {
+            textIndex++;//インデックスを増やす
+            //テキスト部を初期化して
+            storyText.text = "";
+            characterName.text = "";
+            ProgressionStory(storyIndex);
+        }
+        /*if (Input.GetMouseButtonDown(0) && finishText)
+        {
+            textIndex++;//インデックスを増やす
+            //テキスト部を初期化して
+            storyText.text = "";
+            characterName.text = "";
+            ProgressionStory(storyIndex);
+        }*/
     }
 
     //呼び出し方は
